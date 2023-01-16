@@ -1,0 +1,16 @@
+.avatar{
+    height: calc(3rem + 12px);
+    width: calc(3rem + 12px);
+    border-radius: 8px;
+}
+
+.avatarWithBorder{
+    /*box-sizing: initial;  Diferente do Box-sizing: border-box que espreme 
+    tudo, esse bordar,padding.. faz com que não esprema aumentando o tamanho, 
+    no caso 3rem + o tamanho do borda*/
+    height: calc(3rem + 12px);
+    width: calc(3rem + 12px);
+    border-radius: 8px;
+    border: 4px solid var(--green-800);
+    outline: 2px solid var(--green-500);
+}

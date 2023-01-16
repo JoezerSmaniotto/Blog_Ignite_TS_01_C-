@@ -1,0 +1,23 @@
+.wrapper{
+   max-width: 70rem;
+   margin: 2rem auto;
+   padding: 0 1rem;
+
+   display: grid;
+   grid-template-columns:  256px 1fr;
+   gap: 2rem;
+   align-items: flex-start;/* Usa uso para posssicionar 
+   no topo e para desta forma não tentar esticar/distorcer 
+   o contéudo na horizontal se componets tiverem tamanhos 
+   diferentes, por padrão é aplicado o flex-Stretch*/
+}
+
+@media(max-width: 768px){
+   html{
+      font-size: 87.5%; /*Aplica redução da font baseada em rem, nesta caso 100 é 16px
+      como é 87.5 será menos no caso 14px*/
+   }
+   .wrapper{
+      grid-template-columns: 1fr;
+   }
+}
